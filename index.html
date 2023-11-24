@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="./styles/main.css"/>
+    <title>Погода24</title>
+    <meta
+            name="description"
+            content="Сервис для отслеживания погоды в разных частях планеты"
+    />
+    <link rel="icon" href="./assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="./assets/logo192.png"/>
+    <link rel="manifest" href="manifest.json"/>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=5f782a90-ac2b-46d9-8bb7-8be66f4841fd" type="text/javascript"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <img src="assets/logo.png" alt="Логотип">
+        <div>
+            <form class="sidebar__form">
+                <h2>Новый виджет</h2>
+                <input id="latitude" class="sidebar__form__input" type="text" placeholder="Широта" autofocus autocomplete="off">
+                <input id="longitude" class="sidebar__form__input" type="text" placeholder="Долгота" autocomplete="off">
+                <button class="sidebar__form__button" type="submit">Добавить виджет</button>
+                <p class="sidebar__error"></p>
+            </form>
+            <p class="sidebar__clear">
+                Очистить виджеты
+            </p>
+        </div>
+
+        <p class="sidebar__copyright">
+            Разработка сайта:
+            <a class="sidebar__copyright__link" href="https://catdeveloper.ru">CatDeveloper</a>
+        </p>
+    </aside>
+    <section class="widgets">
+        <div class="widgets__list"></div>
+    </section>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

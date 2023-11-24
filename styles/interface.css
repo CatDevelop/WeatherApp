@@ -1,0 +1,86 @@
+.sidebar {
+    height: 100vh;
+    width: 400px;
+    border-radius: 0 24px 24px 0;
+    background: white;
+    box-shadow: var(--box-shadow);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.sidebar__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-m);
+    width: 100%;
+    padding: var(--space-s);
+    border-radius: var(--border-radius-m);
+}
+
+.sidebar__form__input {
+    width: 100%;
+    border: 2px var(--thirdly-text-color) solid;
+    padding: var(--space-s) var(--space-m);
+    border-radius: var(--border-radius-s);
+    color: var(--text-color);
+    font-size: var(--font-size-m);
+}
+
+.sidebar__form__button {
+    font-family: var(--main-font);
+    font-weight: var(--font-weight-xl);
+    padding: calc(var(--space-m) * 0.75) var(--space-xl);
+    height: auto;
+    line-height: 1.5;
+    font-size: var(--font-size-s);
+    background-color: var(--primary-color);
+    color: var(--on-surface-color);
+    border: 0 transparent solid;
+    border-radius: var(--border-radius-m);
+    transition: all 0.1s ease;
+    cursor: pointer;
+    width: 100%;
+}
+
+.sidebar__form__button:hover {
+    transform: scale(0.96);
+}
+
+.sidebar__error {
+    background: var(--light-danger-color);
+    border-radius: var(--border-radius-m);
+    width: 100%;
+    height: 100%;
+    color: var(--danger-color);
+    text-align: center;
+    line-height: 300%;
+}
+
+.sidebar__clear {
+    text-align: center;
+    cursor: pointer;
+    font-size: var(--font-size-s);
+    transition: all 0.1s ease;
+    line-height: calc(var(--font-size-s)*1.1);
+}
+
+.sidebar__clear:hover {
+    font-size: calc(var(--font-size-s)*1.1);
+}
+
+.sidebar__copyright {
+    color: var(--thirdly-text-color);
+    font-size: var(--font-size-s);
+    text-align: center;
+}
+
+.sidebar__copyright__link {
+    color: var(--primary-color);
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-xl);
+}

@@ -1,0 +1,81 @@
+.widgets {
+    padding: var(--page-padding-m);
+    position: absolute;
+    width: calc(100vw - 400px);
+    height: 100vh;
+    top: 0;
+    left: 400px;
+    box-sizing: border-box;
+}
+
+.widgets__list {
+    display: grid;
+    grid-gap: var(--space-m);
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: auto;
+    height: 100%;
+}
+
+.widget {
+    min-width: 335px;
+    height: 400px;
+    position: relative;
+    padding: 15px 10%;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-m);
+    box-shadow: var(--box-shadow);
+}
+
+
+.widget__coordinates {
+    font-size: var(--font-size-m);
+    text-align: center;
+    width: 100%;
+}
+
+.widget__wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: var(--space-m);
+}
+
+.widget__weather {
+    display: flex;
+    align-items: center;
+    gap: var(--space-m);
+}
+
+.widget__weather__temperature {
+    font-size: var(--font-size-xxl);
+}
+
+.widget__info {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-s)
+}
+
+.widget__info__name {
+    font-size: var(--font-size-s);
+}
+
+.widget__info__value {
+    font-size: var(--font-size-m);
+}
+
+.widget__map {
+    max-width: 250px;
+    width: 100%;
+    height: 200px;
+    border-radius: var(--border-radius-m);
+}
+
+ymaps {
+    border-radius: var(--border-radius-m);
+}
