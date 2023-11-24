@@ -9,5 +9,8 @@
 4. Сохранение виджетов
 5. Очистка виджетов
 
+## Попробовать сайт:
+https://catdev-weather.netlify.app
+
 ## Иллюстрации
 ![Home](https://github.com/CatDevelop/WeatherApp/blob/main/assets/Demo.png "WeatherApp")
